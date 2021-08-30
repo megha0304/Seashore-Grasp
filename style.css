@@ -24,7 +24,7 @@ body{
 position: fixed;
 top: 0;
 left: 0;
-background-color:#1F82BD /*#202124*/;
+background-color:#212629 /*#202124*/;
 height: 100%;
 width: 100%;
 display: flex;
@@ -350,6 +350,8 @@ p {
   }
   h1 {
     font-size: 24px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 .inner-header1 {
@@ -358,10 +360,11 @@ p {
   background: linear-gradient(
     60deg,
     rgba(84, 58, 183, 1) 0%,
-    rgba(0, 172, 193, 1) 100%
+    rgba(0, 172, 193, 1) 100%,
+    rgba(0, 0, 0, 0.5) 5%
   );
   color: white;
-  height: 200vh;
+  height: 400vh;
 }
 .inner-header2 {
   height: 40vh;
@@ -380,8 +383,22 @@ p {
 }
 
 
-/* Home Page Style */
+.card:hover
+{
 
+padding: 5px 5px 5px 5px;
+background-color: black;
+color:white;
+outline-color: white;
+}
+
+/* Home Page Style */
+.container-fluid ul li :hover
+{
+ background-color: rgb(15, 216, 235);
+
+
+}
 
 
 
@@ -395,7 +412,8 @@ p {
 .learn {
   height: 95vh;
   overflow: hidden;
-  background: rgb(25, 35, 125);
+  background: rgb(29, 29, 29);
+  font-family:'Permanent Marker', cursive;
 }
 .prompt {
   position: relative;
@@ -422,7 +440,7 @@ div.drop {
   border-radius: 100% 5% 100% 100%;
   transform: rotate(-45deg);
   margin: 0px;
-  background: deepskyblue;
+  background: rgb(7, 197, 223);
   animation: drip 4s forwards;
 }
 
@@ -646,7 +664,7 @@ input.user-password {
 .area {
   text-align: center;
   font-size: 4em;
-  color: rgb(17, 16, 16);
+  color: rgb(1, 241, 241);
   /* letter-spacing: -7px; */
   font-weight: 700;
   text-transform: uppercase;
